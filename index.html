@@ -1,95 +1,87 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fullscreen Background Image</title>
+    <style>
+      /* Reset some default browser styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-<div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
-        Teaser Image
+      /* Set the background image */
+      body {
+        background-image: url('assets/hill.jpeg');
+        background-size: cover;
+        background-position: center center;
+        height: 100vh; /* Make the body take up the full viewport height */
+        overflow: hidden; /* Hide any overflow content */
+      }
+
+      /* Add a semi-transparent overlay on top of the background image */
+      body::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity to your liking */
+      }
+
+      /* Center the content vertically and horizontally */
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      /* Add some styles to the heading and paragraph */
+      h1 {
+        font-size: 4rem;
+        color: #fff;
+        /* text-shadow: 2px 2px #000; */
+        margin-bottom: 2rem;
+        font-family: Arial, Helvetica, sans-serif; /* Change the font family */
+      }
+
+      p {
+        font-size: 2rem;
+        color: #fff;
+        /* text-shadow: 1px 1px #000; */
+        max-width: 50%;
+        text-align: center;
+        margin-bottom: 4rem;
+        font-family: Georgia, serif; /* Change the font family */
+      }
+
+      /* Add a button to the page */
+      .button {
+        padding: 1rem 2rem;
+        background-color: #fff;
+        color: #000;
+        font-size: 2rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-family: Arial, sans-serif; /* Change the font family */
+        box-shadow: 2px 2px 2px #888888; /* Add a box shadow */
+        transition: all 0.2s ease-in-out; /* Add a transition effect */
+      }
+
+      .button:hover {
+        transform: scale(1.1); /* Add a hover effect */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>under construction...</h1>
+      <!-- <p>This is a landing page with a fullscreen background image and a tint on the image. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      <!-- <a href="#" class="button">Learn More</a> -->
     </div>
-</div>
-
-<header class="blog-header">
-    {% if site.logo %}
-      <a class="blog-logo" href="{{site.url}}{{site.baseurl}}" style="background-image: url('{{ site.logo | prepend: site.baseurl }}')">{{ site.title }}</a>
-    {% endif %}
-    <h1 class="blog-title">{{ site.title }}</h1>
-    <h2 class="blog-description">{{ site.description }}</h2>
-    <div class="custom-links">
-      {% for social in site.social %}
-        {% if social.url %}
-            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
-              <i class="fa fa-{{ social.icon }}"></i>
-            </a>
-            &nbsp;&nbsp;·&nbsp;&nbsp;
-        {% endif %}
-      {% endfor %}
-      <a href={{ "/about/" | prepend: site.baseurl }}>About</a>
-    </div>
-</header>
-
-
-<main class="content" role="main">
-
-    {% if site.tags.featured %}
-    <h5 class="index-headline featured"><span>Featured</span></h5>
-
-    <div class="container featured">
-      {% for post in site.tags.featured %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-            </div>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-
-    <h5 class="index-headline normal"><span>Regular</span></h5>
-    {% endif %}
-
-    <div class="cf frame">
-      {% for post in paginator.posts %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-            </div>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-
-    <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.next_page }}>&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="older-posts" href={{ "/" | prepend: site.baseurl }}>Newer posts &rarr;</a>
-        {% else %}
-          <a class="older-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.previous_page }}>Newer posts &rarr;</a>
-        {% endif %}
-      {% endif %}
-    </nav>
-
-
-    <!-- {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}} -->
-
-</main>
+  </body>
+</html>
