@@ -1,8 +1,9 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #f58c71;
-    /* background-image: url(images/strand.JPG) */
-    overflow: hidden;
+    /* background-color: #f58c71; */
+    background-image: url(images/strand.JPG)
+    background-size: cover;
+    /* overflow: hidden; */
   }
   
   /* Style the links inside the navigation bar */
@@ -26,3 +27,11 @@
     background-color: #74d6f9;
     color: rgb(0, 0, 0);
   }
+
+  /* .topnav-background {
+    background-image: url("./images/hill.jpeg");
+    background-size: cover;
+
+    /* Workaround for some mobile browsers
+    min-height: 100%;
+} */
