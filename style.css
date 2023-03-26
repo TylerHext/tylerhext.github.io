@@ -46,7 +46,8 @@
     /* Set the background image */
     body {
     background-image: url('images/heatmap.png');
-    background-color:#5b555f;
+    /* background-color:#5b555f; */
+    background-color:#4a4f62;
     background-size: cover;
     background-position: center center;
     height: 100vh; /* Make the body take up the full viewport height */
@@ -69,16 +70,29 @@
     z-index: -1;
     }
 
-    .content {
+    /* .content {
     position: relative;
     z-index: 1;
     /* Other styles */
-    }
+    /*} */
 
 #fig_el318911402550111960648228013319 {
     position:absolute;
-    top:330px;
+    /* top:330px; */
+    bottom: 0px;
     left: -150px;
     /*right:50%; /* Positions 50% from right (right edge will be at center) */
     /*margin-right:200px; /* Positions 200px to the left of center */
+}
+
+#cce0cdeb-6ffe-4d78-b3dc-6c98b07062ae {
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#b52652f4-c96a-4239-9d7b-5060eac8efe6 {
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
 }
