@@ -1,15 +1,15 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    /* background-color: #f58c71; */
+    /* background-color: #342F24; */
     /* background-image: url(images/strand.JPG) */
     /* background-size: cover; */
     /* overflow: hidden; */
   }
   
   /* Style the links inside the navigation bar */
-  .topnav a {
+.topnav a {
     float: left;
-    color: #000000;
+    color: #DCAAA9;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -17,16 +17,20 @@
   }
   
   /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #fcfcfc; 
-    color: black;
+.topnav a.inactive:hover {
+    background-color: #DCAAA9; 
+    color: #ade861;
   }
   
   /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #74d6f9;
-    color: rgb(0, 0, 0);
+.topnav a.active {
+    background-color: #DCAAA9;
+    color: #342F24;
   }
+
+.topnav a.inactive {
+    background-color: #342F24;
+}
 
   /* .topnav-background {
     background-image: url("./images/hill.jpeg");
@@ -44,22 +48,22 @@
     }
 
     /* Set the background image */
-    body {
-    /* background-image: url('images/heatmap.png'); */
+body {
+    background-image: url('images/palm.jpg');
     /* background-color:#5b555f; */
-    background-color:#4a4f62;
+    /* background-color:#4a4f62; */
     background-size: cover;
     background-position: center center;
     height: 100vh; /* Make the body take up the full viewport height */
     overflow: hidden; /* Hide any overflow content */
     }
 
-    .background-image {
+.background-image {
     position: relative;
     height: 100vh;
     }
 
-    .background-image::before {
+.background-image::before {
     content: '';
     position: absolute;
     top: 0;
@@ -75,6 +79,28 @@
     z-index: 1;
     /* Other styles */
     /*} */
+
+
+.box-1 {
+        /* width: 95%; */
+        /* height: 95%; */
+        opacity: 0.50;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+     }
+
+
+.outline-running {
+        border: 1px solid #b8f766;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        top: 2px;
+}
 
 #fig_el318911402550111960648228013319 {
     position:absolute;
