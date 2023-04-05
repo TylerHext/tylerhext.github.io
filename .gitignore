@@ -1,3 +1,5 @@
 .DS_Store
 _site/
 notes.txt
+config.py
+scripts/

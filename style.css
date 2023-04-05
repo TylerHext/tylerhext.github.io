@@ -1,10 +1,10 @@
-/* Add a black background color to the top navigation */
+/* Add a black background color to the top navigation
 .topnav {
     /* background-color: #342F24; */
     /* background-image: url(images/strand.JPG) */
     /* background-size: cover; */
     /* overflow: hidden; */
-  }
+  /*} */
   
   /* Style the links inside the navigation bar */
 .topnav a {
@@ -28,18 +28,6 @@
     color: #342F24;
   }
 
-.topnav a.inactive {
-    background-color: #342F24;
-}
-
-  /* .topnav-background {
-    background-image: url("./images/hill.jpeg");
-    background-size: cover;
-
-    /* Workaround for some mobile browsers
-    min-height: 100%;
-} */
-
 /* Reset some default browser styles */
 * {
     margin: 0;
@@ -50,8 +38,6 @@
     /* Set the background image */
 body {
     background-image: url('images/palm.jpg');
-    /* background-color:#5b555f; */
-    /* background-color:#4a4f62; */
     background-size: cover;
     background-position: center center;
     height: 100vh; /* Make the body take up the full viewport height */
@@ -74,16 +60,7 @@ body {
     z-index: -1;
     }
 
-    /* .content {
-    position: relative;
-    z-index: 1;
-    /* Other styles */
-    /*} */
-
-
 .box-1 {
-        /* width: 95%; */
-        /* height: 95%; */
         opacity: 0.50;
         background-color: rgb(0, 0, 0);
         position: absolute;
@@ -92,24 +69,6 @@ body {
         right: 10px;
         bottom: 10px;
      }
-
-
-.outline-running {
-        border: 1px solid #b8f766;
-        left: 2px;
-        right: 2px;
-        bottom: 2px;
-        top: 2px;
-}
-
-#fig_el318911402550111960648228013319 {
-    position:absolute;
-    /* top:330px; */
-    bottom: 0px;
-    left: -150px;
-    /*right:50%; /* Positions 50% from right (right edge will be at center) */
-    /*margin-right:200px; /* Positions 200px to the left of center */
-}
 
 #b52652f4-c96a-4239-9d7b-5060eac8efe6 {
     position:absolute;
