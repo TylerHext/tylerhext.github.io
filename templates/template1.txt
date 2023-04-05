@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>tyler hext</title>
+<link href="favicon.png" rel="shortcut icon" type="image/png"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<div class="topnav">
+<a class="inactive" href="index.html">Home</a>
+<a class="active" href="running.html">Running</a>
+<a class="inactive" href="projects.html">Projects</a>
+<a class="inactive" href="wiki.html">Wiki</a>
+<a class="inactive" href="bokeh.html">test</a>
+</div>
+<div class="outline-running"></div>
+<script crossorigin="anonymous" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
+<script crossorigin="anonymous" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.1.0.min.js"></script>
+<script crossorigin="anonymous" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-3.1.0.min.js"></script>
+<div class="placeholder-bokeh-1">
+
+{{ bokeh_div }}
+
+{{ bokeh_script }}
+
+</div>
+
+</html>
