@@ -1,8 +1,8 @@
-from scripts.helper_funcs import running_build, css_build, clean_public, compile_static
+from scripts.helper_funcs import running_build, css_build, clean_docs, compile_static
 
-# Emptying public/ directory
+# Emptying docs/ directory
 print('Clearing space for landing...')
-clean_public()
+clean_docs()
 
 # Compile static assets
 print('Compiling static assets...')
