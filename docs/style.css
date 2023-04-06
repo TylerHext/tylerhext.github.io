@@ -11,9 +11,9 @@
     float: left;
     color: #DCAAA9;
     text-align: center;
-    padding: 14px 16px;
+    padding: 7px 9px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
   }
   
   /* Change the color of links on hover */
@@ -70,10 +70,10 @@ body {
         bottom: 10px;
      }
 
-#b759ae30-eb29-4ddf-87a0-edccb69feefd {
-    position:absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100vw;
-    /* height: 50vh; */
+#cde880e5-7bdf-4f11-b478-757f838905a2 {
+  position:absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  /* height: 50vh; */
 }
