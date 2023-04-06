@@ -1,7 +1,7 @@
 from scripts.helper_funcs import running_build, css_build, clean_docs, compile_static
 
 # Emptying docs/ directory
-print('Clearing space for landing...')
+print('Preparing for build...')
 clean_docs()
 
 # Compile static assets
@@ -24,4 +24,5 @@ div_id = running_build()
 
 
 # Build style.css
+print('Styling...')
 css_build(div_id)
