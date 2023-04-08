@@ -70,10 +70,13 @@ body {
         bottom: 10px;
      }
 
-#cde880e5-7bdf-4f11-b478-757f838905a2 {
+#c44e58f2-d668-462e-980c-ff37f49eb4e3 {
   position:absolute;
   bottom: 0px;
   left: 0px;
-  width: 100vw;
-  /* height: 50vh; */
+  width: 77%;
+}
+
+.image-container{
+  max-width: 100%;
 }
