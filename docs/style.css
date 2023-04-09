@@ -70,10 +70,91 @@ body {
         bottom: 10px;
      }
 
-#cde880e5-7bdf-4f11-b478-757f838905a2 {
+#f4fb2d21-fdaf-493b-9056-806f09cc231d {
   position:absolute;
   bottom: 0px;
   left: 0px;
-  width: 100vw;
-  /* height: 50vh; */
+  width: 77%;
+}
+
+.image-container{
+  max-width: 100%;
+}
+
+.metrics-overlay {
+  max-width: 63%;
+  opacity: 0.5;
+  background-color: rgb(212, 172, 113);
+  position: absolute;
+  top: 5%;
+  left: 10px;
+  right: 10px;
+  bottom: 4%;
+  border: 3px solid green;
+}
+
+.metrics-inner {
+  min-width: 90%;
+  /* display:inline-block; */
+  /* overflow-y: auto; */
+  border: 3px solid blue;
+}
+
+.metrics-right {
+  display: inline-block;
+  min-width: 50%;
+  height: 100%;
+  border: 3px solid rgb(255, 0, 17);
+  position:absolute;
+  right: 0px;
+}
+
+.metrics-left {
+  display: inline-block;
+  border: 3px solid rgb(255, 255, 0);
+}
+
+.runs {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.run-1 {
+  /* position: absolute; */
+  right: 3%;
+  top: 4%;
+  background-color: rgb(244, 12, 12);
+  /* opacity: 0.5; */
+  width: 100%;
+  min-height: 60%
+}
+
+.run-2 {
+  /* position: absolute; */
+  right: 3%;
+  top: 36%;
+  background-color: rgb(33, 232, 15);
+  /* opacity: 0.5; */
+  width: 100%;
+  min-height: 60%
+}
+
+.run-3 {
+  /* position: absolute; */
+  right: 3%;
+  top: 68%;
+  background-color: rgb(50, 148, 252);
+  /* opacity: 0.5; */
+  width: 100%;
+  min-height: 60%
+}
+
+.run-4 {
+  /* position: absolute; */
+  right: 3%;
+  /* top: 68%; */
+  background-color: rgb(252, 50, 252);
+  /* opacity: 0.5; */
+  width: 100%;
+  min-height: 60%
 }

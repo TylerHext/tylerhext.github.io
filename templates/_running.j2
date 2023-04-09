@@ -10,7 +10,41 @@
 <a class="inactive" href="index.html">Home</a>
 <a class="active" href="running.html">Running</a>
 </div>
-<div class="outline-running"></div>
+
+<div>
+  <img src="images/heatmap.png"  class="image-container">
+</div>
+
+<div class="metrics-overlay">
+  <div class="metrics-inner">
+  <div class="metrics-left">
+  <h2>ytd miles</h2>
+  <div class="shoe-totals">
+    <h2>shoe totals</h2>
+    {% for shoe in shoe_totals %}
+        <p> {{ shoe.name }}: {{ shoe.distance }} </p>
+    {% endfor %}
+  </div>
+  </div>
+  <div class="metrics-right">
+  <div class="runs">
+    <div class="run-1">
+      <h2>run 1</h2>
+    </div>
+    <div class="run-2">
+      <h2>run 2</h2>
+    </div>
+    <div class="run-3">
+      <h2>run 3</h2>
+    </div>
+    <div class="run-4">
+      <h2>run 4</h2>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
 <script crossorigin="anonymous" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
 <script crossorigin="anonymous" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.1.0.min.js"></script>
 <script crossorigin="anonymous" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-3.1.0.min.js"></script>
