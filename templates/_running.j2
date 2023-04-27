@@ -6,10 +6,20 @@
 <link href="favicon.png" rel="shortcut icon" type="image/png"/>
 <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
-<div class="topnav">
-<a class="inactive" href="index.html">Home</a>
-<a class="active" href="running.html">Running</a>
-</div>
+<body>
+<nav class="outer-nav">
+  <ul>
+      <li style="float:left"><a href="index.html">Home</a></li>
+      <li style="float:right"><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="inner-nav">
+  <ul>
+      <li><a href="running.html">Running</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="photos.html">Photos</a></li>
+  </ul>
+  </div>
+</nav>
 
 <div>
   <img src="images/heatmap.png"  class="image-container">
@@ -55,5 +65,7 @@
 {{ bokeh_script }}
 
 </div>
+
+</body>
 
 </html>
