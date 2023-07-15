@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Basic Metas -->
+	<meta charset="utf-8">
+	<title>Handwired Keyboard Build | Tyler Hext</title>
+	<meta name="description" content="I set out to build a handwired keyboard to learn soldering, basic circuitry and programming microcontrollers. Along the way I discovered how deep the community of keyboard enthusiasts and artisans is. While I barely scratched the surface, I’ve recorded the process …">
+	<meta name="author" content="Tyler Hext">
+	<link rel="author" href=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Twitter Cards and Open Graph -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:creator" content="">
+	<meta name="twitter:domain" content="tylerhext.com">
+	<meta name="twitter:site" content="">
+	<meta property="og:title" content="Handwired Keyboard Build">
+	<meta property="og:description" content="I set out to build a handwired keyboard to learn soldering, basic circuitry and programming microcontrollers. Along the way I discovered how deep the community of keyboard enthusiasts and artisans is. While I barely scratched the surface, I’ve recorded the process …">
+	<meta property="og:image" content="../../../images/icons/avatar.png">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="../../../2023/07/handwired-keyboard-build/">
+
+	<!-- Stylesheets and Web Fonts -->
+	<link href="/theme/style.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32">
+	<meta name="theme-color" content="#FF8000">
+
+	<meta name="msapplication-TileColor" content="#FF8000">
+	<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+	<meta name="msapplication-square70x70logo" content="/images/icons/mstile-small.png">
+	<meta name="msapplication-square150x150logo" content="/images/icons/mstile-medium.png">
+	<meta name="msapplication-wide310x150logo" content="/images/icons/mstile-wide.png">
+	<meta name="msapplication-square310x310logo" content="/images/icons/mstile-large.png">
+
+	<!--[if lt IE 9]>
+	<script src="/theme/js/html5shiv.min.js"></script>
+	<script src="/theme/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<aside>
+			<a href="/"><img id="avatar" alt="Site Avatar" src="/images/icons/avatar.png"></a>
+			<div id="name"><a href="/">Tyler Hext</a></div>
+			<div id="bio">Data professional from Los Angeles, CA</div>
+
+			<div id="sidebar-links">
+				<a href="/about/">About</a>&nbsp;|&nbsp;<a href="/archive/">Archive</a>
+			</div>
+
+			<div id="social">
+				<a href="https://github.com/TylerHext" title="GitHub" class="icon fa fa-github"></a>
+				<a href="https://www.linkedin.com/in/tyler-hext-68673a196/" title="LinkedIn" class="icon fa fa-linkedin"></a>
+			</div>
+
+			<hr id="sidebar-divider">
+		</aside>
+
+		<article>
+	<h1 class="title"><a href="/2023/07/handwired-keyboard-build/" title="Permalink to Handwired Keyboard Build">Handwired Keyboard&nbsp;Build</a></h1>
+	<time class="date" datetime="2023-07-09 00:00:00-07:00">July 9, 2023</time>
+	<div class="content">
+		<p><a name="introduction"></a></p>
+<p>I set out to build a handwired keyboard to learn soldering, basic circuitry and programming microcontrollers. Along the way I discovered how deep the community of keyboard enthusiasts and artisans is. While I barely scratched the surface, I&#8217;ve recorded the process for my own reference and hope it&#8217;s helpful for anyone looking to do something&nbsp;similar.</p>
+<h2>Table of&nbsp;Contents</h2>
+<ol>
+<li><a href="#background">Background</a></li>
+<li><a href="#tools-components">Tools <span class="amp">&amp;</span>&nbsp;Components</a></li>
+<li><a href="#switch-assembly">Switch&nbsp;Assembly</a></li>
+<li><a href="#wiring-prep">Wiring&nbsp;Prep</a></li>
+<li><a href="#soldering">Soldering</a></li>
+<li><a href="#programming-controller">Programming the&nbsp;Controller</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#final-thoughts">Final&nbsp;Thoughts</a></li>
+<li><a href="#resources">Resources</a></li>
+</ol>
+<hr>
+<h2>Background <a name="background"></a></h2>
+<p>Before attempting this project I had no experience with soldering or circuitry in general, no knowledge of how keyboards work, and some experience programming in Python. I decided to build a keyboard because I was looking for a project where I could learn to program microcontrollers and solder electrical components. I use a keyboard everyday and wanted the fun of using a tool I programmed&nbsp;myself. </p>
+<p>I spent a lot of time reading <a href="#resources">tutorials</a> to compliment my lack of knowledge and they are the primary reason this keyboard actually&nbsp;works.</p>
+<h2>Tools and Components <a name="tools-components"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: center;">Quantity</th>
+<th style="text-align: right;">Cost <span class="caps">USD</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#switches">Switches</a></td>
+<td style="text-align: center;">88</td>
+<td style="text-align: right;">$22</td>
+</tr>
+<tr>
+<td><a href="#springs">Springs</a></td>
+<td style="text-align: center;">88</td>
+<td style="text-align: right;">$10</td>
+</tr>
+<tr>
+<td><a href="#keycaps">Keycaps</a></td>
+<td style="text-align: center;">88</td>
+<td style="text-align: right;">$40</td>
+</tr>
+<tr>
+<td><a href="#diodes">Diodes</a></td>
+<td style="text-align: center;">88</td>
+<td style="text-align: right;">$6</td>
+</tr>
+<tr>
+<td><a href="#stabilizers">Stabilizers</a></td>
+<td style="text-align: center;">6</td>
+<td style="text-align: right;">$7</td>
+</tr>
+<tr>
+<td><a href="#controller">Controller</a></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$13</td>
+</tr>
+<tr>
+<td><a href="#lubricant">Lubricant</a></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$11</td>
+</tr>
+<tr>
+<td><a href="#plate">Plate</a></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$14</td>
+</tr>
+<tr>
+<td><a href="#soldering-iron">Soldering Iron</a></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$24</td>
+</tr>
+<tr>
+<td><a href="#solder">Solder</a></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$9</td>
+</tr>
+<tr>
+<td><a href="#wire">Wire</a></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$6</td>
+</tr>
+<tr>
+<td><a href="#wire-stripper">Wire stripper</a></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$7</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"><strong>$159</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The total is a bit more than I planned to spend but overall not too bad. Ignoring tools/wire/solder which can be used for more projects and springs/lubricant which is optional, you can get the price-per-board down to&nbsp;~$90.</p>
+<p>You can get a solid keyboard from a vendor for like ~$100 so if your goal is to get a nice keyboard for an affordable price it probably doesn&#8217;t make the most sense to handwire your own board. If your goal is to learn circuitry this was a really fun project for a good price and I definitely recommend&nbsp;it. </p>
+<h3>Switches <a name="switches"></a></h3>
+<h3>Springs <a name="springs"></a></h3>
+<h3>Keycaps <a name="keycaps"></a></h3>
+<h3>Diodes <a name="diodes"></a></h3>
+<h3>Stabilizers <a name="stabilizers"></a></h3>
+<h3>Controller <a name="controller"></a></h3>
+<h3>Lubricant <a name="lubricant"></a></h3>
+<h3>Plate <a name="plate"></a></h3>
+<h3>Soldering Iron <a name="soldering-iron"></a></h3>
+<h3>Solder <a name="solder"></a></h3>
+<h3>Wire <a name="wire"></a></h3>
+<h3>Wire stripper <a name="wire-stripper"></a></h3>
+<hr>
+<h2>Switch Assembly <a name="switch-assembly"></a></h2>
+<h2>Wiring Prep <a name="wiring-prep"></a></h2>
+<h2>Soldering <a name="soldering"></a></h2>
+<h2>Programming the Controller <a name="programming-controller"></a></h2>
+<h2>Testing <a name="testing"></a></h2>
+<h2>Final Thoughts <a name="final-thoughts"></a></h2>
+<h2>Resources <a name="resources"></a></h2>
+	</div>
+
+
+			<hr>
+		</article>
+
+		<footer>
+			<p>Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://pages.github.com">GitHub&nbsp;Pages</a>.</p>
+		</footer>
+	</div>
+
+
+</body>
+</html>
