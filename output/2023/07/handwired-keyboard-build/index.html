@@ -4,7 +4,7 @@
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
 	<title>Handwired Keyboard Build | Tyler Hext</title>
-	<meta name="description" content="I set out to build a handwired keyboard to learn soldering, basic circuitry and programming microcontrollers. Along the way I discovered how deep the community of keyboard enthusiasts and artisans is. While I barely scratched the surface, I’ve recorded the process …">
+	<meta name="description" content="I set out to build a handwired keyboard to learn soldering, basic circuitry and programming microcontrollers. Along the way I discovered a much larger rabbit hole than I’d expected . While I barely scratched the surface, I’ve recorded the process for …">
 	<meta name="author" content="Tyler Hext">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 	<meta name="twitter:domain" content="tylerhext.com">
 	<meta name="twitter:site" content="">
 	<meta property="og:title" content="Handwired Keyboard Build">
-	<meta property="og:description" content="I set out to build a handwired keyboard to learn soldering, basic circuitry and programming microcontrollers. Along the way I discovered how deep the community of keyboard enthusiasts and artisans is. While I barely scratched the surface, I’ve recorded the process …">
+	<meta property="og:description" content="I set out to build a handwired keyboard to learn soldering, basic circuitry and programming microcontrollers. Along the way I discovered a much larger rabbit hole than I’d expected . While I barely scratched the surface, I’ve recorded the process for …">
 	<meta property="og:image" content="../../../images/icons/avatar.png">
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="../../../2023/07/handwired-keyboard-build/">
@@ -67,7 +67,7 @@
 	<time class="date" datetime="2023-07-09 00:00:00-07:00">July 9, 2023</time>
 	<div class="content">
 		<p><a name="introduction"></a></p>
-<p>I set out to build a handwired keyboard to learn soldering, basic circuitry and programming microcontrollers. Along the way I discovered how deep the community of keyboard enthusiasts and artisans is. While I barely scratched the surface, I&#8217;ve recorded the process for my own reference and hope it&#8217;s helpful for anyone looking to do something&nbsp;similar.</p>
+<p>I set out to build a handwired keyboard to learn soldering, basic circuitry and programming microcontrollers. Along the way I discovered a much larger rabbit hole than I&#8217;d expected . While I barely scratched the surface, I&#8217;ve recorded the process for my own reference and hope it&#8217;s helpful for anyone looking to do something&nbsp;similar.</p>
 <h2>Table of&nbsp;Contents</h2>
 <ol>
 <li><a href="#background">Background</a></li>
@@ -164,17 +164,38 @@
 <p>The total is a bit more than I planned to spend but overall not too bad. Ignoring tools/wire/solder which can be used for more projects and springs/lubricant which is optional, you can get the price-per-board down to&nbsp;~$90.</p>
 <p>You can get a solid keyboard from a vendor for like ~$100 so if your goal is to get a nice keyboard for an affordable price it probably doesn&#8217;t make the most sense to handwire your own board. If your goal is to learn circuitry this was a really fun project for a good price and I definitely recommend&nbsp;it. </p>
 <h3>Switches <a name="switches"></a></h3>
+<p>Switches are responsible for registering your keypresses with the microcontroller. They are composed of a top <span class="amp">&amp;</span> bottom housing, spring and stem. Variation in the materials and build precision will affect how the keyboard feels and sounds. You can get totally usable switches for ~$0.25/ea or very fancy switches for like $0.85/ea or&nbsp;higher. </p>
+<p>I opted for a lower-cost linear switch mostly because I liked the color, which is definitely the most important factor to&nbsp;consider.</p>
+<p><insert photo of switches here></p>
+<p><a href="https://www.mechanical-keyboard.org/switch-types/">Read more about switch&nbsp;types</a></p>
 <h3>Springs <a name="springs"></a></h3>
+<p>I elected to install heavier springs in my switches because I prefer a heavier keypress. If you prefer the spring weight that comes with your switches then you don&#8217;t have to worry about this&nbsp;step. </p>
+<p>Compared to the original springs in the <span class="caps">KTT</span> Peach switches these replacements are heavier (67g), longer (19mm) and have a dual-stage spring&nbsp;rate.</p>
+<p><span class="caps">INSERT</span> <span class="caps">SPRING</span> <span class="caps">PHOTO</span></p>
+<p>These make the keys <strong>much</strong> heavier to press so mission&nbsp;accomplished. </p>
 <h3>Keycaps <a name="keycaps"></a></h3>
+<p>Probably the most painful part of this build was sifting through hundreds of keycap sets to figure out what would fit my layout and feel good. I knew I wanted to stay low-ish profile and get as much surface area on top of the key as possible. With those requirements in mind I eventually landed on a set of <span class="caps">PBT</span> keycaps in <span class="caps">XDA</span>&nbsp;profile.</p>
+<p><span class="caps">INSERT</span> <span class="caps">KEYCAP</span> <span class="caps">PHOTO</span></p>
+<p>If you have a fondness for headaches there is no shortage of reading material on keycap <a href="https://www.keyboard.university/100-courses/keycaps-101-ydy8j#:~:text=common%20keycap%20profiles-,Keycap%20Materials,profiles%20like%20KAT%20and%20MT3.">materials</a> and <a href="https://preview.redd.it/kld2wynulsq51.png?width=749&amp;auto=webp&amp;s=9ceb85fd038bd56986a3ca44d727a66aee246a73">profiles</a> and <a href="https://thegamingsetup.com/gaming-keyboard/buying-guides/keyboard-sizes">sizes</a>. You can spend a lot of money on these things but don&#8217;t have to. I ended up purchasing through an Etsy vendor. The material is good quality, some of the printings are slightly wonky but nothing too&nbsp;bad.</p>
 <h3>Diodes <a name="diodes"></a></h3>
+<p>Diodes allow current to flow in only one direction through them. We need them because <a href="https://deskthority.net/wiki/Rollover,_blocking_and_ghosting">things get weird</a> if we allow current to travel in both directions when we wire up our matrix. We&#8217;ll include a diode for every switch so the keyboard behaves how we expect it to. This has the side effect of enabling the elusive <a href="https://en.wikipedia.org/wiki/Key_rollover">n-key rollover (<span class="caps">NKRO</span>)</a> which seems to mostly matter for computer gaming but does sound&nbsp;cool.</p>
+<p>The specific diodes we&#8217;re using are 1N4148 diodes because that&#8217;s what everyone else&nbsp;uses. </p>
+<p><span class="caps">INSERT</span> <span class="caps">DIODE</span> <span class="caps">PHOTO</span></p>
 <h3>Stabilizers <a name="stabilizers"></a></h3>
+<p><span class="caps">INSERT</span> <span class="caps">STABILIZER</span> <span class="caps">PHOTO</span></p>
 <h3>Controller <a name="controller"></a></h3>
+<p><span class="caps">INSERT</span> <span class="caps">CONTROLLER</span> <span class="caps">PHOTO</span></p>
 <h3>Lubricant <a name="lubricant"></a></h3>
 <h3>Plate <a name="plate"></a></h3>
+<p><span class="caps">INSERT</span> <span class="caps">PLATE</span> <span class="caps">PHOTO</span></p>
 <h3>Soldering Iron <a name="soldering-iron"></a></h3>
+<p><span class="caps">INSERT</span> <span class="caps">SOLDERING</span> <span class="caps">IRON</span> <span class="caps">PHOTO</span></p>
 <h3>Solder <a name="solder"></a></h3>
+<p><span class="caps">INSERT</span> <span class="caps">SOLDER</span> <span class="caps">PHOTO</span></p>
 <h3>Wire <a name="wire"></a></h3>
+<p><span class="caps">INSERT</span> <span class="caps">WIRE</span> <span class="caps">PHOTO</span></p>
 <h3>Wire stripper <a name="wire-stripper"></a></h3>
+<p><span class="caps">INSERT</span> <span class="caps">WIRE</span> <span class="caps">STRIPPER</span> <span class="caps">PHOTO</span> (and other misc hand&nbsp;tools)</p>
 <hr>
 <h2>Switch Assembly <a name="switch-assembly"></a></h2>
 <h2>Wiring Prep <a name="wiring-prep"></a></h2>
