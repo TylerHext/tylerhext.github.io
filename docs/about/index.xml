@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about me on Tyler Hext</title>
+    <link>https://tylerhext.com/about/</link>
+    <description>Recent content in about me on Tyler Hext</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://tylerhext.com/about/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

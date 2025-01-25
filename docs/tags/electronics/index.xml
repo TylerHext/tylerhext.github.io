@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Electronics on Tyler Hext</title>
+    <link>https://tylerhext.com/tags/electronics/</link>
+    <description>Recent content in Electronics on Tyler Hext</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://tylerhext.com/tags/electronics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bike Light Battery</title>
+      <link>https://tylerhext.com/posts/bike-light/bike-light/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://tylerhext.com/posts/bike-light/bike-light/</guid>
+      <description>&lt;p&gt;This was a quick hack to convert my bicycle tail light from using AAA batteries to a rechargeable lithium cell. The spare battery came from a disposable vaporizer found on the sidewalk.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;This is the inside of the bike light I used. The whole thing is a waterproof shell that comes apart so you can replace batteries in the back, and I wanted to preserve the waterproof seal.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../bike-light-photo-1.jpg&#34; alt=&#34;bike light photo 1&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
