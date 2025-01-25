@@ -95,6 +95,18 @@ a:hover {
     margin: 1em;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .menu li {
+        margin: 0.5em 0; /* Adjust margin for smaller screens */
+    }
+}
+
 .menu a {
     text-decoration: none;
     background: none;
