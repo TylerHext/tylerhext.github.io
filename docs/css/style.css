@@ -4,7 +4,7 @@
     --heading-color: #3f6b7a;
     --menu-text-color: #fff;
     --menu-underline-color: #fff;
-    --article-meta-background: #37362d;
+    --article-meta-background: #3f6b7a;
     --article-meta-text-color: #333;
     --hr-1-color: #E795C0;
     --hr-2-color: #78A6D1;
@@ -198,4 +198,9 @@ th, td {
 
 thead, tfoot, tr:nth-child(even) {
     background: var(--table-row-background);
+}
+
+h2.date {
+    font-size: 1.2em;
+    /* margin-top: 0.5em; */
 }

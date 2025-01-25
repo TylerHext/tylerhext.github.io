@@ -38,12 +38,12 @@
 <p><img src="../handwired-keyboard-photo-1.jpg" alt="Handwired keyboard photo 1"></p>
 <p><img src="../handwired-keyboard-photo-2.jpg" alt="handwired-keyboard-photo-2.jpg"></p>
 <h2 id="custom-firmware">custom firmware</h2>
-<p>The biggest benefit of building this for me has been the custom firmware. Taking the time to customize a keymap and configure dynamic macros can be a huge efficiency improvement if you do lots of computer things. For example I store phrases that I type frequently behind key combinations, so I can press a couple keys to instantly type my email / password / zoom link. Or I&rsquo;ll record a macro to reformat multiple lines in a csv file all at once.</p>
+<p>The biggest benefit of building this for me has been the custom firmware. Taking the time to customize a keymap and configure dynamic macros can be a huge efficiency improvement if you do lots of computer things. For example I store phrases that I type frequently behind key combinations, so I can press a couple keys to instantly type my email / password / zoom link. Or I&rsquo;ll record a dynamic macro to reformat multiple lines in a csv file all at once.</p>
 <p><img src="../handwired-keyboard-photo-3.jpg" alt="handwired-keyboard-photo-3"></p>
 <h2 id="how-keyboards-work">how keyboards work</h2>
 <p>Anytime the raspberry pi receives power it is configured to run a main.py file saved on the board. That python script is just a loop that repeatedly checks whether any keys are in a depressed position.</p>
 <p>To avoid actually wiring each individual key to a pin on the pi we create a keyboard matrix, columns and rows linking switches together. Each column and each row get wired to an individual pin on the pi.</p>
-<p>So when the pi gets input on column 5 and row 4, the program checks the keymap for that intersection and sends the appropriate character to the machine.</p>
+<p>When the pi gets input on column 5 and row 4, the program checks the keymap for that intersection and sends the appropriate character to the machine.</p>
 <p><img src="../handwired-keyboard-photo-4.jpg" alt="handwired-keyboard-photo-4.jpg"></p>
 <h2 id="references">References:</h2>
 <p><a href="https://geekhack.org/index.php?topic=87689.0">A modern handwiring guide - stronger, cleaner, easier (cribbit)</a>
