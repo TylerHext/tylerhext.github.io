@@ -1,6 +1,6 @@
 ---
 title: p-nana-1
-date: 2024-09-15
+date: 2025-01-15
 ---
 
 Juniper purchased from House of Bonsai in 2024.
