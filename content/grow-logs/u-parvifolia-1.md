@@ -1,6 +1,6 @@
 ---
 title: u-parvifolia-1
-date: 2024-12-24
+date: 2025-03-15
 ---
 
 Chinese elm purchased from an online outlet store in spring 2024.

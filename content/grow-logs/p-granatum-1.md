@@ -1,6 +1,6 @@
 ---
 title: p-granatum-1
-date: 2024-12-22
+date: 2024-01-15
 ---
 
 Pomegranate cutting started in March 2024.
