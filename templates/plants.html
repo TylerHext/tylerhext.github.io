@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+    {{ content | safe }}
+    <div class="plants-grid">
+    {% for log in logs %}
+        <div class="plants-card">
+            <a href="{{ log.file }}">
+                <div class="thumbnail">
+                    <img src="images/grow-logs/{{ log.file | replace('.html', '') }}-thumbnail.jpg" alt="{{ log.title }}">
+                </div>
+                <div class="card-info">
+                    <p>{{ log.title }}</p>
+                    <p class="date">{{ log.date.strftime('%Y-%m-%d') }}</p>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

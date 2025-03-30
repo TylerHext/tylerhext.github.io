@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="grow-log">
+    <h1>{{ title }}</h1>
+    
+    <div class="log-entries">
+        {% for entry in entries %}
+            <div class="log-entry">
+                <h2>{{ entry.date }}</h2>
+                <div class="log-content">
+                    {{ entry.content | safe }}
+                </div>
+                <div class="image-gallery">
+                    {% for image in entry.images %}
+                        <div class="image-container">
+                            <img src="{{ image }}" alt="{{ title }} - {{ entry.date }}" loading="lazy">
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
