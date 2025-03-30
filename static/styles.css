@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #f2f1ee;
+    color: #404142;
+}
+a {
+    color: #6686ca;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1, h2 {
+    color: #ee9696;
+}
+ul {
+    padding-left: 20px;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.home-page p {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page p img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Bonsai Grid Styles */
+.plants-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.plants-card {
+    width: calc(33.333% - 20px);
+    min-width: 200px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+}
+
+.plants-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.plants-card a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.plants-card a:hover {
+    text-decoration: none;
+}
+
+.plants-card .thumbnail {
+    height: 150px;
+    overflow: hidden;
+}
+
+.plants-card .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.plants-card:hover .thumbnail img {
+    transform: scale(1.05);
+}
+
+.plants-card .card-info {
+    padding: 6px;
+}
+
+.plants-card p {
+    margin: 0;
+    color: #cf96ee;
+    font-size: 14px;
+}
+
+.plants-card .date {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Bonsai log styles */
+.grow-log {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.log-entries {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.log-entry {
+    border-top: 1px solid #ddd;
+    padding-top: 1.5rem;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.image-container {
+    flex: 1 1;
+    max-width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .plants-grid {
+        justify-content: center;
+    }
+    
+    .plants-card {
+        width: calc(50% - 20px);
+    }
+
+    .image-container {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .plants-card {
+        width: 100%;
+    }
+}
