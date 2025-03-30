@@ -38,3 +38,9 @@ Repotted and carved.
 ![p-granatum 6 photo 9](/images/grow-logs/p-granatum-6-photo-9.jpg)
 
 ![p-granatum 6 photo 10](/images/grow-logs/p-granatum-6-photo-10.jpg)
+
+## 2025 March
+
+![p-granatum 6 photo 11](/images/grow-logs/p-granatum-6-photo-11.jpg)
+
+![p-granatum 6 photo 12](/images/grow-logs/p-granatum-6-photo-12.jpg)

@@ -19,3 +19,7 @@ p-granatum purchased from House of Bonsai in 2024.
 Bigger pot.
 
 ![p-granatum 7 1 photo 4](/images/grow-logs/p-granatum-7-photo-4.jpg)
+
+## 2025 March
+
+![p-granatum 7 1 photo 5](/images/grow-logs/p-granatum-7-photo-5.jpg)
