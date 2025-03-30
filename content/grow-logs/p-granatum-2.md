@@ -36,3 +36,10 @@ Repotting.
 ![p-granatum 2 photo 10](/images/grow-logs/p-granatum-2-photo-10.jpg)
 
 ![p-granatum 2 photo 11](/images/grow-logs/p-granatum-2-photo-11.jpg)
+
+## 2025 March
+
+![p-granatum 2 photo 12](/images/grow-logs/p-granatum-2-photo-12.jpg)
+
+![p-granatum 2 photo 13](/images/grow-logs/p-granatum-2-photo-13.jpg)
+

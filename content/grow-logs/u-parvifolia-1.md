@@ -28,3 +28,19 @@ Sudden leaf drop.
 ![Chinese elm 1 photo 5](/images/grow-logs/u-parvifolia-1-photo-5.jpg)
 
 ![Chinese elm 1 photo 6](/images/grow-logs/u-parvifolia-1-photo-6.jpg)
+
+## 2025 January
+
+![Chinese elm 1 photo 7](/images/grow-logs/u-parvifolia-1-photo-7.jpg)
+
+![Chinese elm 1 photo 8](/images/grow-logs/u-parvifolia-1-photo-8.jpg)
+
+![Chinese elm 1 photo 9](/images/grow-logs/u-parvifolia-1-photo-9.jpg)
+
+![Chinese elm 1 photo 10](/images/grow-logs/u-parvifolia-1-photo-10.jpg)
+
+## 2025 March
+
+![Chinese elm 1 photo 13](/images/grow-logs/u-parvifolia-1-photo-13.jpg)
+
+![Chinese elm 1 photo 14](/images/grow-logs/u-parvifolia-1-photo-14.jpg)
