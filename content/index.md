@@ -1,3 +1,1 @@
-## hi
-
-![index photo 1](/images/index-photo-1.png)
+![index photo 2](/images/index-photo-2.jpg)
