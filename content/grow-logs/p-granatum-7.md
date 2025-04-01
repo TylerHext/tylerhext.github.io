@@ -3,7 +3,7 @@ title: p-granatum-7
 date: 2025-03-15
 ---
 
-p-granatum purchased from House of Bonsai in 2024.
+Pomegranate purchased from House of Bonsai in 2024.
 
 ---
 ## 2024 December

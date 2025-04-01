@@ -1,23 +1,32 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
     background: #f2f1ee;
     color: #404142;
 }
 a {
-    color: #6686ca;
+    color: #7EBDC2;
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
+    color: #FFBAD1;
 }
 h1, h2 {
     color: #ee9696;
 }
 ul {
     padding-left: 20px;
+}
+
+nav {
+    color: #1A5E63;
+}
+
+.nav-divider {
+    color: #1A5E63;
 }
 
 .home-page {
@@ -34,6 +43,10 @@ ul {
 .home-page p img {
     max-width: 100%;
     height: auto;
+    box-shadow:
+    -10px 10px 0 -5px #1A5E63,
+    -20px 20px 0 -10px #7EBDC2,
+    -30px 30px 0 -15px #FFBAD1;
 }
 
 /* Bonsai Grid Styles */
@@ -56,7 +69,7 @@ ul {
 
 .plants-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(243, 163, 248, 0.25);
 }
 
 .plants-card a {
@@ -82,7 +95,7 @@ ul {
 }
 
 .plants-card:hover .thumbnail img {
-    transform: scale(1.05);
+    transform: scale(1);
 }
 
 .plants-card .card-info {
@@ -91,7 +104,7 @@ ul {
 
 .plants-card p {
     margin: 0;
-    color: #cf96ee;
+    color: #000000;
     font-size: 14px;
 }
 
