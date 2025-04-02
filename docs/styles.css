@@ -15,14 +15,16 @@ a:hover {
     color: #FFBAD1;
 }
 h1, h2 {
-    color: #ee9696;
+    color: #1A5E63;
 }
 ul {
     padding-left: 20px;
 }
 
 nav {
+    display: flex;
     color: #1A5E63;
+    justify-content: space-between;
 }
 
 .nav-divider {
@@ -157,6 +159,40 @@ nav {
     height: auto;
     max-height: 500px;
     object-fit: contain;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;  /* This ensures vertical centering */
+    padding: 2rem;
+}
+
+.contact-box {
+    background-image: url("images/index-photo-1.png");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    box-shadow:
+        -10px 10px 0 -5px #1A5E63,
+        -20px 20px 0 -10px #7EBDC2,
+        -30px 30px 0 -15px #FFBAD1;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-box h1 {
+    margin-bottom: 1.5rem;
+}
+
+.contact-box p {
+    line-height: 1.6;
+    color: #404142;
+    background-color: white;
+    justify-content: center;
+    padding: 2px;
 }
 
 /* Responsive adjustments */
