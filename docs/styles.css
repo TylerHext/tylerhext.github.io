@@ -35,15 +35,17 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
 }
 
 .home-page p {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .home-page p img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     box-shadow:
     -10px 10px 0 -5px #1A5E63,
@@ -196,6 +198,133 @@ nav {
     color: #404142;
     justify-content: center;
     padding: 0px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;  /* This ensures vertical centering */
+    padding: 2rem;
+    /* background-image: url("images/index-photo-1.png"); */
+    background-size: cover;
+    background-position: center;
+}
+
+/* About Cards Row Styles */
+.about-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.about-cards-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.about-card {
+    background: white;
+    /* box-shadow:
+        -10px 10px 0 -5px #1A5E63,
+        -20px 20px 0 -10px #7EBDC2,
+        -30px 30px 0 -15px #FFBAD1; */
+    border: 2px solid #404142;
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    min-width: 200px;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transition: transform 0.2s, box-shadow 0.2s; */
+}
+
+/* .about-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(122, 189, 194, 0.18);
+} */
+
+.about-card h2 {
+    margin-bottom: 1rem;
+    color: #1A5E63;
+    font-size: 1.3rem;
+}
+
+.about-card-content {
+    font-size: 1rem;
+    color: #404142;
+    text-align: center;
+    min-height: 40px;
+}
+
+.about-book-title {
+    font-weight: bold;
+    color: #1A5E63;
+    margin-bottom: 0.5rem;
+}
+
+.about-book-author {
+    color: #404142;
+    font-style: italic;
+}
+
+.about-album-title {
+    font-weight: bold;
+    color: #1A5E63;
+    margin-bottom: 0.5rem;
+}
+
+.about-album-artist {
+    color: #404142;
+    font-style: italic;
+}
+
+.about-bio {
+    background: #fff;
+    border: 2px solid #404142;
+    border-radius: 8px;
+    /* box-shadow:
+        -10px 10px 0 -5px #1A5E63,
+        -20px 20px 0 -10px #7EBDC2,
+        -30px 30px 0 -15px #FFBAD1; */
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.about-bio h2 {
+    color: #1A5E63;
+    margin-bottom: 1rem;
+}
+
+.about-bio p {
+    color: #404142;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .about-cards-row {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-cards-row {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+    .about-card {
+        min-width: 0;
+        width: 100%;
+    }
 }
 
 /* Responsive adjustments */
