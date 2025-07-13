@@ -3,7 +3,7 @@ title: p-nana-1
 date: 2025-07-15
 ---
 
-Juniper purchased from House of Bonsai in 2024.
+Juniper from House of Bonsai in 2024.
 
 ---
 

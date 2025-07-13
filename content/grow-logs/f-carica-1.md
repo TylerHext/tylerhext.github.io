@@ -3,13 +3,11 @@ title: f-carica-1
 date: 2025-07-13
 ---
 
-Ficus carica grown from a cutting off a local tree.
+Ficus carica grown from a cutting.
 
 ---
 
 ## 2024 December
-
-1 of 4 cuttings to survive.
 
 ![Ficus carica 1 photo 1](/images/grow-logs/f-carica-1-photo-1.jpg)
 

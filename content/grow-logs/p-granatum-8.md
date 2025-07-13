@@ -9,7 +9,7 @@ Pomegranate air layer started in May 2024.
 
 ## 2024 September
 
-Removal day, ~4 months after starting the layer.
+~4 months after starting the layer.
 
 ![p-granatum air layer 1 photo 1](/images/grow-logs/p-granatum-8-photo-1.jpg)
 
