@@ -3,7 +3,7 @@ title: u-parvifolia-1
 date: 2025-07-13
 ---
 
-Chinese elm purchased from an online outlet store in spring 2024.
+Chinese elm purchased in spring 2024.
 
 ---
 
@@ -17,8 +17,6 @@ Chinese elm purchased from an online outlet store in spring 2024.
 
 ## 2024 September
 
-Sudden leaf drop.
-
 ![Chinese elm 1 photo 3](/images/grow-logs/u-parvifolia-1-photo-3.jpg)
 
 ## 2024 December
@@ -26,8 +24,6 @@ Sudden leaf drop.
 ![Chinese elm 1 photo 4](/images/grow-logs/u-parvifolia-1-photo-4.jpg)
 
 ![Chinese elm 1 photo 5](/images/grow-logs/u-parvifolia-1-photo-5.jpg)
-
-![Chinese elm 1 photo 6](/images/grow-logs/u-parvifolia-1-photo-6.jpg)
 
 ## 2025 January
 

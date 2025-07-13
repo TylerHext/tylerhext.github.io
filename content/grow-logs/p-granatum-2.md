@@ -9,8 +9,6 @@ Pomegranate cutting started in March 2024.
 
 ## 2024 July
 
-~4 months after cutting.
-
 ![p-granatum 2 photo 1](/images/grow-logs/p-granatum-2-photo-1.png)
 
 ![p-granatum 2 photo 2](/images/grow-logs/p-granatum-2-photo-2.png)
