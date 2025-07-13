@@ -1,6 +1,6 @@
 ---
 title: p-granatum-6
-date: 2025-03-15
+date: 2025-07-13
 ---
 
 Pomegranate cutting started in March 2024.
@@ -44,3 +44,9 @@ Repotted and carved.
 ![p-granatum 6 photo 11](/images/grow-logs/p-granatum-6-photo-11.jpg)
 
 ![p-granatum 6 photo 12](/images/grow-logs/p-granatum-6-photo-12.jpg)
+
+## 2025 July
+
+![p-granatum 6 photo 13](/images/grow-logs/p-granatum-6-photo-13.jpg)
+
+![p-granatum 6 photo 14](/images/grow-logs/p-granatum-6-photo-14.jpg)
