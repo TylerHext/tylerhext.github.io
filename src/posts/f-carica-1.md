@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Ficus carica #1"
-created: 2025-07-13
+created: 2024-10-01
 updated: 2025-07-15
 thumbnail: /assets/images/grow-logs/f-carica-1-photo-1.jpg
 tags: [plants]
