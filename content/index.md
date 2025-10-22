@@ -1,1 +1,0 @@
-![index photo 2](/images/index-photo-3.jpg)
