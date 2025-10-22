@@ -1,5 +1,5 @@
-.venv/
-generate.py
-TODO.md
+# Node.js
+node_modules/
+
+# OS files
 .DS_Store
-requirements.txt

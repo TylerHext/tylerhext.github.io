@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: Posts
+mainClass: posts-index
+---
+
+<h1>Posts</h1>
+
+<div class="posts-list">
+{% for post in collections.posts %}
+  <div class="post-item">
+    <a href="{{ post.url }}" class="post-title">{{ post.data.title }}</a>
+    <span class="post-date">{{ post.data.updated | readableDate }}</span>
+  </div>
+{% endfor %}
+</div>
