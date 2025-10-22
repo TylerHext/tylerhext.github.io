@@ -5,10 +5,10 @@ mainClass: bookshelf-page
 ---
 
 <div class="bookshelf-container">
-  <h1>Bookshelf</h1>
+  <h1>bookshelf</h1>
 
   <section class="reading-section">
-    <h2>Currently Reading</h2>
+    <h2>reading</h2>
     <ul class="book-list">
       <li class="book-item">
         <span class="book-title">The Age of Surveillance Capitalism</span>
@@ -18,7 +18,7 @@ mainClass: bookshelf-page
   </section>
 
   <section class="reading-section">
-    <h2>Completed</h2>
+    <h2>read</h2>
     <ul class="book-list">
       <li class="book-item">
         <span class="book-title">This is For Everyone</span>
