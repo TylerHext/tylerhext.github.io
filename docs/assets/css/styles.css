@@ -79,6 +79,100 @@ nav {
     background: transparent;
 }
 
+/* Bookshelf page */
+.bookshelf-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.bookshelf-container h1 {
+    margin: 0 0 2rem 0;
+}
+
+.reading-section {
+    margin-bottom: 1.5rem;
+}
+
+.reading-section h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+}
+
+.book-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-left: 1rem;
+    border-left: 2px solid #000000;
+}
+
+.book-title {
+    font-weight: normal;
+    color: #000000;
+}
+
+.book-author {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.book-date {
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+/* Projects page */
+.projects-page {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-item {
+    border-top: 1px solid #000000;
+    padding-top: 1rem;
+}
+
+.project-item:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.project-item h2 {
+    margin: 0 0 0.5rem 0;
+}
+
+.project-item h2 a {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+.project-item h2 a:hover {
+    color: #000000;
+}
+
+.project-item img {
+    display: inline-block;
+    margin: 0.5rem 0.25rem 0.5rem 0;
+    vertical-align: middle;
+}
+
 /* Posts index page */
 .posts-index {
     max-width: 650px;
