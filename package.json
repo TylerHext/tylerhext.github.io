@@ -1,0 +1,16 @@
+{
+  "name": "tylerhext-github-io",
+  "version": "1.0.0",
+  "description": "Personal website with chronological posts",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf docs/*"
+  },
+  "keywords": [],
+  "author": "Tyler Hext",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

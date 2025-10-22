@@ -1,0 +1,166 @@
+/* Base styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    color: #000000;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #000000;
+}
+
+h1, h2 {
+    color: #000000;
+    font-weight: normal;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    color: #000000;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+.nav-divider {
+    border: none;
+    border-top: 1px solid #000000;
+    margin: 0.5rem 0 2rem 0;
+}
+
+/* Home page */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.home-page img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+}
+
+/* About page */
+.about-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-page img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+}
+
+/* Contact page */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+}
+
+.contact-box {
+    padding: 1rem 0;
+    max-width: 100%;
+    border: none;
+    background: transparent;
+}
+
+/* Posts index page */
+.posts-index {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.post-title {
+    color: #0000ff;
+    text-decoration: underline;
+    flex: 1;
+}
+
+.post-date {
+    color: #666666;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+/* Individual post page */
+.post-page {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.post-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 1rem;
+}
+
+.post-header h1 {
+    margin: 0 0 0.5rem 0;
+    font-weight: normal;
+}
+
+.post-header .post-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+.post-content {
+    margin-bottom: 3rem;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+    border: 1px solid #000000;
+}
+
+.post-footer {
+    padding-top: 2rem;
+    border-top: 1px solid #000000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .post-thumbnail img {
+        width: 100%;
+        height: auto;
+    }
+}
