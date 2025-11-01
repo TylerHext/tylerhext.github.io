@@ -7,11 +7,6 @@ thumbnail: /assets/images/grow-logs/p-afra-3-photo-1.jpg
 tags: [plants]
 ---
 
-
-Portulacaria afra cutting started in the summer of 2025.
-
----
-
 ## 2025 July
 
 ![Portulacaria afra 3 photo 1](/assets/images/grow-logs/p-afra-3-photo-1.jpg)

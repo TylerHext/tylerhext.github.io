@@ -7,11 +7,6 @@ thumbnail: /assets/images/grow-logs/p-granatum-3-photo-1.jpg
 tags: [plants]
 ---
 
-
-Pomegranate cutting started in March 2024.
-
----
-
 ## 2024 July
 
 ![p-granatum 3 photo 1](/assets/images/grow-logs/p-granatum-3-photo-1.jpg)

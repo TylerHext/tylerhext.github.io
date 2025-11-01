@@ -18,22 +18,23 @@ mainClass: bookshelf-page
   </section>
 
   <section class="reading-section">
-    <h2>read</h2>
+    <h2>2025</h2>
     <ul class="book-list">
+      <li class="book-item">
+        <span class="book-title">Mistborn: The Alloy of Law</span>
+        <span class="book-author">by Brandon Sanderson</span>
+      </li>
       <li class="book-item">
         <span class="book-title">This is For Everyone</span>
         <span class="book-author">by Tim Berners-Lee</span>
-        <span class="book-date">— 2025</span>
       </li>
       <li class="book-item">
         <span class="book-title">East of Eden</span>
         <span class="book-author">by John Steinbeck</span>
-        <span class="book-date">— 2025</span>
       </li>
       <li class="book-item">
         <span class="book-title">Wind and Truth</span>
         <span class="book-author">by Brandon Sanderson</span>
-        <span class="book-date">— 2025</span>
       </li>
     </ul>
   </section>
