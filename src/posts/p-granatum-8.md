@@ -7,11 +7,6 @@ thumbnail: /assets/images/grow-logs/p-granatum-8-photo-1.jpg
 tags: [plants]
 ---
 
-
-Pomegranate air layer started in May 2024.
-
----
-
 ## 2024 September
 
 ~4 months after starting the layer.

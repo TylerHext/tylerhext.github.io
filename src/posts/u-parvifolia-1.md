@@ -7,11 +7,6 @@ thumbnail: /assets/images/grow-logs/u-parvifolia-1-photo-1.jpg
 tags: [plants]
 ---
 
-
-Chinese elm purchased in spring 2024.
-
----
-
 ## 2024 May
 
 ![Chinese elm 1 photo 1](/assets/images/grow-logs/u-parvifolia-1-photo-1.jpg)

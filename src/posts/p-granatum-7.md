@@ -7,10 +7,6 @@ thumbnail: /assets/images/grow-logs/p-granatum-7-photo-1.jpg
 tags: [plants]
 ---
 
-
-Pomegranate from House of Bonsai in 2024.
-
----
 ## 2024 December
 
 ![p-granatum 7 1 photo 1](/assets/images/grow-logs/p-granatum-7-photo-1.jpg)
