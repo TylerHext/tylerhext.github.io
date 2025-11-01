@@ -7,11 +7,6 @@ thumbnail: /assets/images/grow-logs/f-carica-1-photo-1.jpg
 tags: [plants]
 ---
 
-
-Ficus carica grown from a cutting.
-
----
-
 ## 2024 December
 
 ![Ficus carica 1 photo 1](/assets/images/grow-logs/f-carica-1-photo-1.jpg)
