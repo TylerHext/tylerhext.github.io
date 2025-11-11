@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Punica granatum #6"
-created: 2025-07-13
+created: 2024-07-13
 updated: 2025-07-15
 thumbnail: /assets/images/grow-logs/p-granatum-6-photo-1.png
 tags: [plants]

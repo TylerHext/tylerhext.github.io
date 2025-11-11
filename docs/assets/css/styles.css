@@ -79,27 +79,43 @@ nav {
     background: transparent;
 }
 
-/* Bookshelf page */
-.bookshelf-container {
+/* Now page */
+.now-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.bookshelf-container h1 {
+.now-container h1 {
     margin: 0 0 2rem 0;
 }
 
-.reading-section {
-    margin-bottom: 1.5rem;
+.now-content {
+    display: flex;
+    gap: 3rem;
 }
 
-.reading-section h2 {
+.reading-section,
+.playing-section {
+    flex: 1;
+    min-width: 0;
+}
+
+.reading-section h2,
+.playing-section h2 {
     margin: 0 0 1rem 0;
     font-size: 1.1rem;
 }
 
-.book-list {
+.reading-section h3,
+.playing-section h3 {
+    margin: 2rem 0 1rem 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.book-list,
+.game-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -108,7 +124,8 @@ nav {
     gap: 0.75rem;
 }
 
-.book-item {
+.book-item,
+.game-item {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
@@ -116,12 +133,14 @@ nav {
     border-left: 2px solid #000000;
 }
 
-.book-title {
+.book-title,
+.game-title {
     font-weight: normal;
     color: #000000;
 }
 
-.book-author {
+.book-author,
+.game-platform {
     font-size: 0.9rem;
     color: #666666;
 }
@@ -129,6 +148,14 @@ nav {
 .book-date {
     font-size: 0.85rem;
     color: #666666;
+}
+
+/* Responsive layout for now page */
+@media (max-width: 768px) {
+    .now-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 /* Projects page */

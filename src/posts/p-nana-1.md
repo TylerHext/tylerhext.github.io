@@ -1,7 +1,7 @@
 ---
 layout: post.njk
-title: "Punica granatum Nana #1"
-created: 2025-07-15
+title: "Procumbens nana #1"
+created: 2024-09-05
 updated: 2025-07-15
 thumbnail: /assets/images/grow-logs/p-nana-1-photo-1.jpg
 tags: [plants]

@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Ulmus parvifolia #1"
-created: 2025-07-13
+created: 2024-05-13
 updated: 2025-07-15
 thumbnail: /assets/images/grow-logs/u-parvifolia-1-photo-1.jpg
 tags: [plants]
