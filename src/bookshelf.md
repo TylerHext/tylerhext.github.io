@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bookshelf | tyler</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="icon" href="/assets/images/chicken-favicon-16x16.ico" type="image/x-icon" />
-</head>
-<body>
-    <nav>
-        <a href="/">home</a> |
-        <a href="/posts/">posts</a> |
-        <a href="/bookshelf/">bookshelf</a> |
-        <!-- <a href="/projects/">projects</a> | -->
-        <a href="/about/">about</a> |
-        <a href="/contact/">contact</a>
-    </nav>
-    <hr class="nav-divider">
-    <main class="bookshelf-page">
-        <div class="bookshelf-container">
+---
+layout: base.njk
+title: bookshelf
+mainClass: bookshelf-page
+---
+
+<div class="bookshelf-container">
   <h1>bookshelf</h1>
+
   <section class="reading-section">
     <h2>reading</h2>
     <ul class="book-list">
@@ -29,6 +16,7 @@
       </li>
     </ul>
   </section>
+
   <section class="reading-section">
     <h2>2025</h2>
     <ul class="book-list">
@@ -67,7 +55,3 @@
     </ul>
   </section>
 </div>
-
-    </main>
-</body>
-</html>
