@@ -4,4 +4,4 @@ title: tyler
 mainClass: home-page
 ---
 
-![index photo](/assets/images/index-photo-3.jpg)
+![home photo](assets/images/89110010.jpg)
