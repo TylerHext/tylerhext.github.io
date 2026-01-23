@@ -11,8 +11,8 @@ mainClass: bookshelf-page
     <h2>reading</h2>
     <ul class="book-list">
       <li class="book-item">
-        <span class="book-title">The Age of Surveillance Capitalism</span>
-        <span class="book-author">by Shoshana Zuboff</span>
+        <span class="book-title">Atomic Habits</span>
+        <span class="book-author">by James Clear</span>
       </li>
     </ul>
   </section>
@@ -20,6 +20,10 @@ mainClass: bookshelf-page
   <section class="reading-section">
     <h2>2025</h2>
     <ul class="book-list">
+      <li class="book-item">
+        <span class="book-title">The Age of Surveillance Capitalism</span>
+        <span class="book-author">by Shoshana Zuboff</span>
+      </li>
       <li class="book-item">
         <span class="book-title">What the Buddha Taught</span>
         <span class="book-author">by Walpola Rahula</span>
