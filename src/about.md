@@ -4,6 +4,6 @@ title: about
 mainClass: about-page
 ---
 
-![about photo](/assets/images/about-photo-1.jpg)
+![about photo](/assets/images/index-photo-1.png)
 
 hi, I'm Tyler. i maintain this site for fun.
