@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Light Hacking | tyler</title>
+    <link rel="stylesheet" href="/assets/css/neo-brutal-1.css">
+    <link rel="icon" href="/assets/images/chicken-favicon-16x16.ico" type="image/x-icon" />
+</head>
+<body>
+    <nav>
+        <a href="/">home</a>
+        <a href="/posts/">posts</a>
+        <a href="/bookshelf/">bookshelf</a>
+        <!-- <a href="/projects/">projects</a> -->
+        <a href="/about/">about</a>
+        <a href="/contact/">contact</a>
+    </nav>
+    <hr class="nav-divider">
+    <main class="post-page">
+        
+<article class="post">
+    <header class="post-header">
+        <h1>Bike Light Hacking</h1>
+        <div class="post-meta">
+            
+            <span>Created: April 5, 2024</span>
+            
+            
+            <span>Updated: January 22, 2026</span>
+            
+        </div>
+    </header>
+
+    <div class="post-content">
+        <p>Converting a Bontrager Flare 1 bicycle tail light from disposable AAA batteries to rechargeable lithium power.</p>
+<hr>
+<h2>components</h2>
+<p><strong>Light:</strong> <a href="https://www.trekbikes.com/us/en_US/equipment/bike-accessories/bike-lights/bike-rear-lights/bontrager-flare-1-rear-bike-light/p/11367/">Bontrager Flare 1</a> tail light with 3x AAA battery compartment</p>
+<p><img src="/assets/images/light-circuit.jpeg" alt="Bontrager Flare 1 circuit board"></p>
+<p><strong>Battery:</strong> 3.7v lithium cell salvaged from disposable vaporizer</p>
+<p><img src="/assets/images/raw-battery.jpeg" alt="Lithium battery extracted from disposable vaporizer"></p>
+<p><strong>Charging module:</strong> TP4056 lithium battery charging board with USB micro port, overcharge/discharge protection, and status LEDs</p>
+<p><img src="/assets/images/tp4056.png" alt="TP4056 charging module"></p>
+<h2>technical specifications</h2>
+<ul>
+<li>Original voltage (3x AAA): ~2.9v</li>
+<li>Lithium cell voltage: ~3.1v</li>
+<li>Original housing IPX4 rating preserved</li>
+</ul>
+<h2>process</h2>
+<ol>
+<li>Disassemble light (lens, circuit board, battery compartment)</li>
+<li>Test voltage compatibility with alligator clips</li>
+<li>Solder TP4056 OUT +/- to light circuit board +/- terminals</li>
+<li>Dremel battery compartment to fit lithium cell</li>
+<li>Wire lithium cell to TP4056 BATT +/-</li>
+<li>Reassemble housing with modified components</li>
+</ol>
+<p><img src="/assets/images/test-fit.jpeg" alt="Test fit with alligator clips"></p>
+<h2>charging</h2>
+<p>Remove battery compartment, plug in USB cable. Blue LED indicates full charge.</p>
+<p><img src="/assets/images/light-charging.jpeg" alt="Light charging via USB"></p>
+<hr>
+<h2>updates</h2>
+<h3>2026 January</h3>
+<p>Over 2000 miles logged on this light so far with no issues.</p>
+<h2>resources</h2>
+<ul>
+<li><a href="https://atkosite.wordpress.com/2023/01/17/disposable-vapes-repurposing-the-crappiest-invention/">Disposable vapes - repurposing the crappiest invention</a></li>
+<li><a href="https://www.instructables.com/How-to-Reuse-Disposable-Vape-Lithium-Batteries/">How to Reuse Disposable Vape Lithium Batteries</a></li>
+<li><a href="https://www.reddit.com/r/AskElectronics/">r/AskElectronics</a></li>
+</ul>
+
+    </div>
+
+    <footer class="post-footer">
+        <a href="/posts/">&larr; Back to all posts</a>
+    </footer>
+</article>
+
+    </main>
+</body>
+</html>
