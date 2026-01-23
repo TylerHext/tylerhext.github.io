@@ -20,7 +20,7 @@ npm run clean
 
 ## Adding Content
 
-### Update an existing plant post
+### Update an existing post
 
 1. Edit the post in `src/posts/`
 2. Add new content (photos, text)
