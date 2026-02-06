@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Punica granatum #8"
 created: 2024-09-24
-updated: 2024-12-15
+updated: 2026-02-06
 thumbnail: /assets/images/grow-logs/p-granatum-8-photo-1.jpg
 tags: [plants]
 ---
@@ -22,3 +22,7 @@ tags: [plants]
 ![p-granatum air layer 1 photo 4](/assets/images/grow-logs/p-granatum-8-photo-4.jpg)
 
 ![p-granatum air layer 1 photo 5](/assets/images/grow-logs/p-granatum-8-photo-5.jpg)
+
+## 2026 February
+
+![p-granatum air layer 1 photo 7](/assets/images/grow-logs/p-granatum-8-photo-7.jpg)

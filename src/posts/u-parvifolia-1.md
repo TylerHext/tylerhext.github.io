@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Ulmus parvifolia #1"
 created: 2024-05-13
-updated: 2025-07-15
+updated: 2026-02-06
 thumbnail: /assets/images/grow-logs/u-parvifolia-1-photo-1.jpg
 tags: [plants]
 ---
@@ -50,3 +50,11 @@ tags: [plants]
 ![Chinese elm 1 photo 17](/assets/images/grow-logs/u-parvifolia-1-photo-17.jpg)
 
 ![Chinese elm 1 photo 18](/assets/images/grow-logs/u-parvifolia-1-photo-18.jpg)
+
+## 2026 February
+
+![Chinese elm 1 photo 19](/assets/images/grow-logs/u-parvifolia-1-photo-19.jpg)
+
+![Chinese elm 1 photo 20](/assets/images/grow-logs/u-parvifolia-1-photo-20.jpg)
+
+![Chinese elm 1 photo 21](/assets/images/grow-logs/u-parvifolia-1-photo-21.jpg)

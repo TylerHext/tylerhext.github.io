@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Portulacaria afra #2"
 created: 2024-12-21
-updated: 2025-07-16
+updated: 2026-02-06
 thumbnail: /assets/images/grow-logs/p-afra-2-photo-1.jpg
 tags: [plants]
 ---
@@ -18,3 +18,9 @@ tags: [plants]
 ![Portulacaria afra 2 photo 3](/assets/images/grow-logs/p-afra-2-photo-3.jpg)
 
 ![Portulacaria afra 2 photo 4](/assets/images/grow-logs/p-afra-2-photo-4.jpg)
+
+## 2026 February
+
+![Portulacaria afra 2 photo 5](/assets/images/grow-logs/p-afra-2-photo-5.jpg)
+
+![Portulacaria afra 2 photo 6](/assets/images/grow-logs/p-afra-2-photo-6.jpg)
