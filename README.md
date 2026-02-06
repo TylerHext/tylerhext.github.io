@@ -46,15 +46,3 @@ git add .
 git commit -m "Update site"
 git push origin master
 ```
-
-## Structure
-
-```
-src/              # Source files
-├── posts/        # Blog posts (chronological)
-├── _includes/    # Layouts
-├── assets/       # CSS, images, fonts
-└── *.md          # Custom pages (home, about, contact)
-
-docs/             # Generated output (GitHub Pages)
-```

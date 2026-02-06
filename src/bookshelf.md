@@ -11,6 +11,16 @@ mainClass: bookshelf-page
     <h2>reading</h2>
     <ul class="book-list">
       <li class="book-item">
+        <span class="book-title">Slaughterhouse-Five</span>
+        <span class="book-author">by Kurt Vonnegut</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="reading-section">
+    <h2>2026</h2>
+    <ul class="book-list">
+      <li class="book-item">
         <span class="book-title">Atomic Habits</span>
         <span class="book-author">by James Clear</span>
       </li>

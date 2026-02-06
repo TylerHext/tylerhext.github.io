@@ -10,7 +10,7 @@ mainClass: posts-index
 {% for post in collections.posts %}
   <div class="post-item">
     <a href="{{ post.url }}" class="post-title">{{ post.data.title }}</a>
-    <span class="post-date">{{ post.data.updated | readableDate }}</span>
+    <span class="post-date">{{ post.data.updated | vhsDate }}</span>
   </div>
 {% endfor %}
 </div>
