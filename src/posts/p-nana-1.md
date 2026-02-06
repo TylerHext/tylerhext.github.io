@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Procumbens nana #1"
 created: 2024-09-05
-updated: 2025-07-15
+updated: 2026-02-06
 thumbnail: /assets/images/grow-logs/p-nana-1-photo-1.jpg
 tags: [plants]
 ---
@@ -20,3 +20,9 @@ tags: [plants]
 ![p-nana 1 photo 3](/assets/images/grow-logs/p-nana-1-photo-3.jpg)
 
 ![p-nana 1 photo 4](/assets/images/grow-logs/p-nana-1-photo-4.jpg)
+
+## 2026 February
+
+![p-nana 1 photo 5](/assets/images/grow-logs/p-nana-1-photo-5.jpg)
+
+![p-nana 1 photo 6](/assets/images/grow-logs/p-nana-1-photo-6.jpg)
