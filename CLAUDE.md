@@ -78,7 +78,9 @@ Plant posts use scientific name abbreviations:
 - `p-afra` = Portulacaria afra (elephant bush)
 - `p-nana` = Punica granatum 'Nana' (dwarf pomegranate)
 - `f-carica` = Ficus carica (fig)
+- `f-sellowiana` = Feijoa sellowiana (pineapple guava)
 - `u-parvifolia` = Ulmus parvifolia (Chinese elm)
+- `c-ovata` = Crassula ovata (jade plant)
 
 Individual plants are numbered: `p-granatum-1.md`, `p-granatum-2.md`, etc.
 
