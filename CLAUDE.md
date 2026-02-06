@@ -45,6 +45,10 @@ This site uses **11ty (Eleventy)**, a simple static site generator. Key features
 - **Templates:** Nunjucks (`.njk`) for layouts
 - **Content:** Markdown (`.md`) for posts and pages
 - **Collections:** Posts are auto-sorted by `updated` date (most recent first)
+- **Date Filters:**
+  - `readableDate` - "Month Day, Year" format
+  - `shortDate` - "YYYY-MM-DD" format
+  - `vhsDate` - "YYYY.MM.DD" VHS-style format (used throughout site)
 
 ### Post Structure
 
@@ -163,10 +167,15 @@ GitHub Pages automatically serves the updated site at `tylerhext.com`.
 
 ### Styling
 Edit `src/assets/css/styles.css` for visual changes. Current aesthetic:
-- Minimalist, content-focused design
-- CodeNewRoman Nerd Font (monospace)
-- Color palette: teal/pink accents on warm neutral background
-- Responsive layout
+- **Brutalist dark design** - minimalist, content-focused
+- **Color scheme**: Slate background (#2b2d31) with light gray text (#e8e8e8)
+- **Accent color**: Soft pink (#f792ad) for link underlines and nav divider
+- **Typography**: Courier New monospace font
+- **Hover effects**: Chromatic aberration (RGB split) on links
+- **VHS-style timestamps**: Dates formatted as "CREATED YYYY.MM.DD" and "UPDATED YYYY.MM.DD"
+- Responsive layout with no borders on images
+
+**Design Philosophy**: Professional brutalist aesthetic with subtle Y2K/nostalgic touches. Maintains credibility for LinkedIn visitors while expressing personality through minimal retro details.
 
 ### Navigation
 Edit `src/_includes/base.njk` to modify site-wide navigation.

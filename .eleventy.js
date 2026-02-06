@@ -32,6 +32,16 @@ module.exports = function(eleventyConfig) {
     return new Date(dateObj).toISOString().split('T')[0];
   });
 
+  // VHS-style date filter (YYYY.MM.DD)
+  eleventyConfig.addFilter("vhsDate", (dateObj) => {
+    if (!dateObj) return "";
+    const date = new Date(dateObj);
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}.${month}.${day}`;
+  });
+
   return {
     dir: {
       input: "src",

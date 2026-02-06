@@ -4,38 +4,41 @@ body {
     max-width: 650px;
     margin: 40px auto;
     padding: 20px;
-    background: #ffffff;
-    color: #000000;
+    background: #2b2d31;
+    color: #e8e8e8;
     line-height: 1.5;
     font-size: 14px;
 }
 
 a {
-    color: #0000ff;
+    color: #e8e8e8;
     text-decoration: underline;
+    text-decoration-color: #f792ad;
 }
 
 a:hover {
-    color: #000000;
+    color: #e8e8e8;
+    text-shadow: 1px 0 #ff00ff, -1px 0 #00ffff;
 }
 
 h1, h2 {
-    color: #000000;
+    color: #e8e8e8;
     font-weight: normal;
 }
 
 /* Navigation */
 nav {
     display: flex;
-    color: #000000;
+    color: #e8e8e8;
     justify-content: flex-start;
     margin-bottom: 0.5rem;
     font-size: 14px;
+    gap: 1rem;
 }
 
 .nav-divider {
     border: none;
-    border-top: 1px solid #000000;
+    border-top: 1px solid #f792ad;
     margin: 0.5rem 0 2rem 0;
 }
 
@@ -49,7 +52,7 @@ nav {
 .home-page img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #000000;
+    border: none;
 }
 
 /* About page */
@@ -62,7 +65,7 @@ nav {
 .about-page img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #000000;
+    border: none;
 }
 
 /* Contact page */
@@ -107,9 +110,13 @@ nav {
     font-size: 1.1rem;
 }
 
+.reading-section:not(:first-child) h2 {
+    margin-top: 2.5rem;
+}
+
 .reading-section h3,
 .playing-section h3 {
-    margin: 2rem 0 1rem 0;
+    margin: 2.5rem 0 1rem 0;
     font-size: 1rem;
     font-weight: normal;
 }
@@ -130,24 +137,24 @@ nav {
     flex-direction: column;
     gap: 0.25rem;
     padding-left: 1rem;
-    border-left: 2px solid #000000;
+    border-left: 1px solid #e8e8e8;
 }
 
 .book-title,
 .game-title {
     font-weight: normal;
-    color: #000000;
+    color: #e8e8e8;
 }
 
 .book-author,
 .game-platform {
     font-size: 0.9rem;
-    color: #666666;
+    color: #e8e8e8;
 }
 
 .book-date {
     font-size: 0.85rem;
-    color: #666666;
+    color: #e8e8e8;
 }
 
 /* Responsive layout for now page */
@@ -172,12 +179,10 @@ nav {
 }
 
 .project-item {
-    border-top: 1px solid #000000;
     padding-top: 1rem;
 }
 
 .project-item:first-child {
-    border-top: none;
     padding-top: 0;
 }
 
@@ -186,12 +191,12 @@ nav {
 }
 
 .project-item h2 a {
-    color: #0000ff;
+    color: #e8e8e8;
     text-decoration: underline;
 }
 
 .project-item h2 a:hover {
-    color: #000000;
+    color: #cccccc;
 }
 
 .project-item img {
@@ -221,13 +226,13 @@ nav {
 }
 
 .post-title {
-    color: #0000ff;
+    color: #e8e8e8;
     text-decoration: underline;
     flex: 1;
 }
 
 .post-date {
-    color: #666666;
+    color: #e8e8e8;
     font-size: 0.85rem;
     white-space: nowrap;
 }
@@ -240,7 +245,6 @@ nav {
 
 .post-header {
     margin-bottom: 2rem;
-    border-bottom: 1px solid #000000;
     padding-bottom: 1rem;
 }
 
@@ -253,7 +257,7 @@ nav {
     display: flex;
     gap: 1.5rem;
     font-size: 0.85rem;
-    color: #666666;
+    color: #e8e8e8;
 }
 
 .post-content {
@@ -265,12 +269,11 @@ nav {
     height: auto;
     display: block;
     margin: 1rem 0;
-    border: 1px solid #000000;
+    border: none;
 }
 
 .post-footer {
     padding-top: 2rem;
-    border-top: 1px solid #000000;
 }
 
 /* Responsive */
