@@ -23,8 +23,7 @@ This is a static personal website (tylerhext.github.io) built with **11ty (Eleve
 │   ├── assets/
 │   │   ├── css/
 │   │   │   └── styles.css         # Site styles
-│   │   ├── images/                # All images
-│   │   └── fonts/                 # CodeNewRoman Nerd Font
+│   │   └── images/                # Small non-grow-log images only (about photo, etc.)
 │   ├── index.md                   # Home page
 │   ├── about.md                   # About page
 │   ├── contact.md                 # Contact page
@@ -35,6 +34,17 @@ This is a static personal website (tylerhext.github.io) built with **11ty (Eleve
 ├── package.json                   # Node dependencies
 └── node_modules/                  # npm packages
 ```
+
+### Image Hosting
+
+**Grow-log images are hosted on S3 + CloudFront, NOT in git.**
+
+- **S3 bucket:** `s3://tylerhext-site-images`
+- **CloudFront CDN:** `https://dwg0n3yggf5p6.cloudfront.net`
+- **Path structure:** `grow-logs/{filename}` (e.g. `grow-logs/p-granatum-9-photo-1.jpg`)
+- `src/assets/images/grow-logs/` is in `.gitignore` — never commit images there
+
+Only small non-grow-log images (about photo, bike light photos, etc.) live in `src/assets/images/` and are committed to git.
 
 ### Build System
 
@@ -104,19 +114,27 @@ npm run clean
 
 ### Adding a New Plant Post
 
-1. Create `src/posts/{species-code}-{number}.md`
-2. Add frontmatter:
+1. **Upload photos to S3 first:**
+   ```bash
+   aws s3 cp photo.jpg s3://tylerhext-site-images/grow-logs/p-granatum-9-photo-1.jpg
+   # Repeat for each photo
+   ```
+
+2. Create `src/posts/{species-code}-{number}.md`
+
+3. Add frontmatter — thumbnail uses the CloudFront URL:
    ```yaml
    ---
    layout: post.njk
-   title: Punica granatum (Pomegranate) #5
+   title: Punica granatum (Pomegranate) #9
    created: 2025-01-20
    updated: 2025-01-20
-   thumbnail: /assets/images/grow-logs/p-granatum-5-photo-1.jpg
+   thumbnail: https://dwg0n3yggf5p6.cloudfront.net/grow-logs/p-granatum-9-photo-1.jpg
    tags: [plants]
    ---
    ```
-3. Add content with images:
+
+4. Add content with images using CloudFront URLs:
    ```markdown
    Brief description of the plant.
 
@@ -124,17 +142,23 @@ npm run clean
 
    ## 2025 January
 
-   ![Photo description](/assets/images/grow-logs/p-granatum-5-photo-1.jpg)
+   ![Photo description](https://dwg0n3yggf5p6.cloudfront.net/grow-logs/p-granatum-9-photo-1.jpg)
    ```
-4. Place images in `src/assets/images/grow-logs/`
+
 5. Run `npm run build`
+
+**Never place grow-log images in `src/assets/images/grow-logs/` — that path is gitignored. Always upload to S3 first.**
 
 ### Updating an Existing Post
 
-1. Open the post file in `src/posts/`
-2. Add new content (typically a new date section with photos)
-3. Update the `updated` field in frontmatter
-4. Run `npm run build`
+1. **Upload any new photos to S3 first:**
+   ```bash
+   aws s3 cp new-photo.jpg s3://tylerhext-site-images/grow-logs/p-granatum-8-photo-8.jpg
+   ```
+2. Open the post file in `src/posts/`
+3. Add new content (typically a new date section with CloudFront image URLs)
+4. Update the `updated` field in frontmatter
+5. Run `npm run build`
 
 ### Adding Non-Plant Content
 
@@ -159,9 +183,10 @@ GitHub Pages automatically serves the updated site at `tylerhext.com`.
 ## Important Notes
 
 - **DO commit:** `docs/`, `src/`, `.eleventy.js`, `package.json`, `package-lock.json`, `CLAUDE.md`
-- **DO NOT commit:** `node_modules/`, helper scripts like `update-frontmatter.py`
+- **DO NOT commit:** `node_modules/`, helper scripts like `update-frontmatter.py`, grow-log images
 - The `docs/` directory contains generated files but **must be committed** for GitHub Pages
-- Images should be placed in `src/assets/images/` and referenced as `/assets/images/{filename}`
+- **Grow-log images live on S3/CloudFront** — always use `https://dwg0n3yggf5p6.cloudfront.net/grow-logs/...` URLs in markdown
+- Small non-grow-log images (about photo, etc.) can still go in `src/assets/images/` and be committed
 - Custom pages (home, about, contact) are in the root `src/` directory
 - The posts index is at `src/posts/index.njk`
 
