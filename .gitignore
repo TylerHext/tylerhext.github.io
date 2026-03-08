@@ -3,3 +3,7 @@ node_modules/
 
 # OS files
 .DS_Store
+
+# Images are hosted on S3/CloudFront — never commit grow-logs to git
+src/assets/images/grow-logs/
+docs/assets/images/grow-logs/
