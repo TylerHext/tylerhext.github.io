@@ -276,6 +276,37 @@ nav {
     padding-top: 2rem;
 }
 
+/* Photos page */
+.photo-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.photo-item {
+    margin: 0;
+    padding: 0;
+}
+
+.photo-item a {
+    display: block;
+    text-decoration: none;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+.photo-item figcaption {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 0.5rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     body {

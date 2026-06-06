@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: photos
+mainClass: photos-page
+---
+
+<div class="photo-feed">
+  {% for photo in photos %}
+  <figure class="photo-item">
+    <a href="https://dwg0n3yggf5p6.cloudfront.net/film/{{ photo.filename }}-orig.jpg" target="_blank" rel="noopener">
+      <img
+        src="https://dwg0n3yggf5p6.cloudfront.net/film/{{ photo.filename }}-web.jpg"
+        alt="{{ photo.alt }}"
+        loading="lazy"
+      >
+    </a>
+    <figcaption>{{ photo.camera }} — {{ photo.film }}</figcaption>
+  </figure>
+  {% endfor %}
+</div>

@@ -11,6 +11,18 @@ mainClass: bookshelf-page
     <h2>2026</h2>
     <ul class="book-list">
       <li class="book-item">
+        <span class="book-title">A Storm of Swords</span>
+        <span class="book-author">by George R.R. Martin</span>
+      </li>
+      <li class="book-item">
+        <span class="book-title">A Clash of Kings</span>
+        <span class="book-author">by George R.R. Martin</span>
+      </li>
+      <li class="book-item">
+        <span class="book-title">A Game of Thrones</span>
+        <span class="book-author">by George R.R. Martin</span>
+      </li>
+      <li class="book-item">
         <span class="book-title">Project Hail Mary</span>
         <span class="book-author">by Andy Weir</span>
       </li>
