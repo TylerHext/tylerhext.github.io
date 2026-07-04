@@ -2,6 +2,8 @@
 layout: base.njk
 title: bookshelf
 mainClass: bookshelf-page
+permalink: false
+eleventyExcludeFromCollections: true
 ---
 
 <div class="bookshelf-container">
