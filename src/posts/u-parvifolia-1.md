@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Ulmus parvifolia #1"
 created: 2024-05-13
-updated: 2026-02-06
+updated: 2026-07-26
 thumbnail: https://dwg0n3yggf5p6.cloudfront.net/grow-logs/u-parvifolia-1-photo-1.jpg
 tags: [plants]
 ---
@@ -58,3 +58,17 @@ tags: [plants]
 ![Chinese elm 1 photo 20](https://dwg0n3yggf5p6.cloudfront.net/grow-logs/u-parvifolia-1-photo-20.jpg)
 
 ![Chinese elm 1 photo 21](https://dwg0n3yggf5p6.cloudfront.net/grow-logs/u-parvifolia-1-photo-21.jpg)
+
+## 2026 July
+
+<a href="https://dwg0n3yggf5p6.cloudfront.net/grow-logs/u-parvifolia-1-photo-22-orig.jpg" target="_blank" rel="noopener">
+  <img src="https://dwg0n3yggf5p6.cloudfront.net/grow-logs/u-parvifolia-1-photo-22-web.jpg" alt="Chinese elm 1 photo 22" loading="lazy">
+</a>
+
+<a href="https://dwg0n3yggf5p6.cloudfront.net/grow-logs/u-parvifolia-1-photo-23-orig.jpg" target="_blank" rel="noopener">
+  <img src="https://dwg0n3yggf5p6.cloudfront.net/grow-logs/u-parvifolia-1-photo-23-web.jpg" alt="Chinese elm 1 photo 23" loading="lazy">
+</a>
+
+<a href="https://dwg0n3yggf5p6.cloudfront.net/grow-logs/u-parvifolia-1-photo-24-orig.jpg" target="_blank" rel="noopener">
+  <img src="https://dwg0n3yggf5p6.cloudfront.net/grow-logs/u-parvifolia-1-photo-24-web.jpg" alt="Chinese elm 1 photo 24" loading="lazy">
+</a>
