@@ -1,0 +1,26 @@
+---
+layout: base.njk
+title: 4runner
+mainClass: fourrunner-index
+eleventyExcludeFromCollections: true
+---
+
+<a class="hero" href="https://dwg0n3yggf5p6.cloudfront.net/4runner/4runner-hero-orig.jpg" target="_blank" rel="noopener"><img src="https://dwg0n3yggf5p6.cloudfront.net/4runner/4runner-hero-web.jpg" alt="Toyota 4Runner parked on a desert trail below a boulder-covered hillside" loading="lazy"></a>
+
+<div class="masthead">
+  <h1>4Runner build thread</h1>
+  <p class="subtitle">1999 SR5 4WD</p>
+</div>
+
+<div class="log">
+  <p class="search-label">search:</p>
+  <h2>build log</h2>
+  <div class="posts-list">
+  {% for post in collections.fourrunner %}
+    <div class="post-item">
+      <a href="{{ post.url }}" class="post-title">{{ post.data.title }}</a>
+      <span class="post-date">{{ post.data.created | vhsDate }}</span>
+    </div>
+  {% endfor %}
+  </div>
+</div>

@@ -17,9 +17,14 @@ This is a static personal website (tylerhext.github.io) built with **11ty (Eleve
 │   │   ├── p-granatum-1.md        # Living document per plant
 │   │   ├── p-afra-1.md
 │   │   └── ...                    # Future posts (tech, trips, etc.)
+│   ├── 4runner/                   # 4Runner build log (its own front door at /4runner/)
+│   │   ├── index.njk              # Build-log landing page (hero photo + rig + entry list)
+│   │   ├── 4runner.json           # Directory data: sets layout for entries
+│   │   └── 2026-08-*.md           # One entry per work session (NOT in the /posts/ feed)
 │   ├── _includes/                 # 11ty layouts
 │   │   ├── base.njk               # Base HTML template
-│   │   └── post.njk               # Individual post template
+│   │   ├── post.njk               # Individual post template
+│   │   └── vehicle-post.njk       # 4Runner build-log entry template
 │   ├── _data/
 │   │   └── photos.json            # Film photo metadata (order = display order)
 │   ├── assets/
@@ -52,6 +57,7 @@ S3 path structure by content type:
 |---|---|---|
 | Grow log photos | `grow-logs/` | `grow-logs/p-granatum-9-photo-1.jpg` |
 | Film photos | `film/` | `film/20260606-001-web.jpg` |
+| 4Runner build log | `4runner/` | `4runner/4runner-first-entry-photo-1.jpg` |
 | About page photo | `about/` | `about/about-photo-2-web.jpg` |
 | Home page photo | `home/` | `home/home-photo-2-web.jpg` |
 
@@ -117,6 +123,8 @@ Plant posts use scientific name abbreviations:
 Individual plants are numbered: `p-granatum-1.md`, `p-granatum-2.md`, etc.
 
 Film photos use `YYYYMMDD-NNN` slugs (e.g. `20260606-001`), matching their entry in `src/_data/photos.json`.
+
+4Runner build-log entries use `YYYY-MM-{slug}` filenames (e.g. `2026-09-rear-brakes.md`); their photos use `4runner-{slug}-photo-N` on S3.
 
 ## Development Commands
 
@@ -193,6 +201,54 @@ The `/photos` page is driven by `src/_data/photos.json`. Array order = display o
 1. Upload new photos to S3 (see above).
 2. Open the post in `src/posts/`, add a new date section with CloudFront image URLs.
 3. Update the `updated` field in frontmatter.
+4. Run `npm run build`.
+
+### Adding a 4Runner Build Log Entry
+
+**The build log is behind a feature flag (`FOURRUNNER_ENABLED`) and not yet published.**
+`npm run serve` and `npm run build:4runner` turn it on automatically; a plain
+`npm run build` (what the Deployment section below uses) excludes `src/4runner/**`
+from the build entirely — nothing under `/4runner/` is written to `docs/`, and the
+nav link is hidden — so it's safe to build out entries and push unrelated site
+changes in the meantime. To publish it for real, flip `FOURRUNNER_ENABLED=true` in
+`package.json`'s `build` script (or just start running `build:4runner` instead) and
+commit the resulting `docs/4runner/`. Note this only gates the generated site —
+`src/4runner/*.md` is still committed to the (public) repo if you push it, so drafts
+aren't private, just unpublished.
+
+The build log lives at `/4runner/` (its own front door, **not** in the `/posts/` feed).
+It works like an old forum build thread: one landing page kept up to date by hand,
+plus one dated entry per work session. Entries are sorted newest-first by `created`.
+
+1. **Process and upload photos to S3** (under `4runner/`):
+   ```bash
+   TMPDIR=$(mktemp -d)
+   sips -Z 1400 -s format jpeg -s formatOptions 85 photo.jpg --out "$TMPDIR/4runner-rear-brakes-photo-1-web.jpg"
+   sips -s format jpeg -s formatOptions best photo.jpg --out "$TMPDIR/4runner-rear-brakes-photo-1-orig.jpg"
+   aws s3 cp "$TMPDIR/4runner-rear-brakes-photo-1-web.jpg"  s3://tylerhext-site-images/4runner/4runner-rear-brakes-photo-1-web.jpg
+   aws s3 cp "$TMPDIR/4runner-rear-brakes-photo-1-orig.jpg" s3://tylerhext-site-images/4runner/4runner-rear-brakes-photo-1-orig.jpg
+   ```
+
+2. Create `src/4runner/YYYY-MM-{slug}.md` (e.g. `2026-09-rear-brakes.md`). The
+   `vehicle-post.njk` layout is applied automatically via `src/4runner/4runner.json`.
+   ```yaml
+   ---
+   title: "Rear brakes & drums"
+   created: 2026-09-14        # the date the work was done (drives sort order)
+   mileage: 152300            # odometer at time of work
+   category: maintenance      # maintenance | repair | mod | diagnostic
+   cost: 180                  # dollars, parts + supplies (optional)
+   parts:                     # optional; part numbers are the useful bit for others
+     - "Akebono ISD-XXX shoes"
+   thumbnail: https://dwg0n3yggf5p6.cloudfront.net/4runner/4runner-rear-brakes-photo-1-web.jpg
+   ---
+   ```
+   Add content with the standard lazy-load image pattern. Set `updated:` only if you
+   revise an entry later (it shows as "UPDATED …" but does not change sort order).
+
+3. **Keep `src/4runner/index.njk` current** — update "the rig" spec list and
+   "open items" as things change. The build-log entry list is generated automatically.
+
 4. Run `npm run build`.
 
 ### Updating Home or About Photos

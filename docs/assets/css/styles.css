@@ -276,6 +276,74 @@ nav {
     padding-top: 2rem;
 }
 
+/* 4Runner build log */
+.fourrunner-index {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fourrunner-index .hero {
+    display: block;
+}
+
+.fourrunner-index .hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+.masthead {
+    text-align: center;
+}
+
+.masthead h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.masthead .subtitle {
+    margin: 0.25rem 0 0 0;
+}
+
+.masthead .tagline {
+    margin: 2rem 0 0 0;
+    font-size: 0.9rem;
+}
+
+.fourrunner-index h2 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1rem;
+}
+
+.log {
+    margin-top: 2rem;
+}
+
+.search-label {
+    color: #999;
+    margin: 0 0 1.5rem 0;
+}
+
+.log .posts-list {
+    margin-top: 0.5rem;
+}
+
+/* Vehicle post parts list */
+.post-parts {
+    margin-bottom: 3rem;
+}
+
+.post-parts h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-parts ul {
+    padding-left: 1.25rem;
+}
+
 /* Photos page */
 .photo-feed {
     display: flex;

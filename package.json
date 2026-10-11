@@ -4,7 +4,8 @@
   "description": "Personal website with chronological posts",
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve",
+    "build:4runner": "FOURRUNNER_ENABLED=true eleventy",
+    "serve": "FOURRUNNER_ENABLED=true eleventy --serve",
     "clean": "rm -rf docs/*"
   },
   "keywords": [],
